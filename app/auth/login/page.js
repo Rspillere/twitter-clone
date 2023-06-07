@@ -2,15 +2,15 @@
 export default function Login() {
   return (
     <>
-      <div className="flex min-h-full flex-col justify-center">
-        <div className=" bg-sky-600 w-screen">
-          <h2 className="my-28 text-center  text-2xl font-bold leading-9 tracking-tight text-white">
-            Loginbienchingon
+      <div className="flex h-screen flex-col">
+        <div className="flex bg-sky-600 h-1/4 items-center justify-center">
+          <h2 className="text-2xl font-bold leading-9 tracking-tight text-white">
+            LoginBienChingon
           </h2>
         </div>
 
-        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-6" action="#" method="POST">
+        <div className="flex flex-col mt-10 w-screen px-6 items-center">
+          <form className="space-y-6 w-full md:w-1/2 lg:w-1/3" action="#" method="POST">
             <div>
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                 Email address
@@ -33,11 +33,7 @@ export default function Login() {
                 <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
                   Password
                 </label>
-                <div className="text-sm">
-                  <a href="#" className="font-semibold text-sky-600 hover:text-sky-500">
-                    Forgot password?
-                  </a>
-                </div>
+                
               </div>
               <div className="mt-2">
                 <input
@@ -52,20 +48,28 @@ export default function Login() {
               </div>
             </div>
 
+            <div className="text-sm text-right">
+                  <a href="#" className="font-semibold text-sky-600 hover:text-sky-500">
+                    Forgot password?
+                  </a>
+                </div>
+
             <div>
               <button
                 type="submit"
                 className="flex w-full justify-center rounded-md bg-sky-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
               >
-                Sign in
+                login
               </button>
             </div>
+
+            
           </form>
 
           <p className="mt-10 text-center text-sm text-gray-500">
             Not a member?{' '}
             <a href="#" className="font-semibold leading-6 text-sky-600 hover:text-sky-500">
-              Start a 14 day free trial
+              Sign up now
             </a>
           </p>
         </div>
